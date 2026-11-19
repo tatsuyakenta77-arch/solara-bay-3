@@ -1,0 +1,37 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:#0b0f14;font-family:Arial,Helvetica,sans-serif;color:#fff}
+#game,#game canvas{position:fixed;inset:0;display:block}
+#hud{position:fixed;inset:0;pointer-events:none;z-index:5;display:none}
+#hud.on{display:block}
+#hudTopLeft{position:absolute;top:14px;left:16px;text-shadow:0 2px 4px #000}
+#hudCash{font-size:30px;font-weight:900;color:#7dff9a}
+#hudStars{font-size:26px;color:#ffd23e;letter-spacing:4px}
+#hudMission{font-size:15px;font-weight:900;color:#ffd23e;margin-top:6px}
+#hudObjective{font-size:14px;max-width:420px;margin-top:3px}
+#hudTopRight{position:absolute;top:14px;right:16px}
+#minimap{border:3px solid rgba(255,255,255,.7);border-radius:50%;background:#123}
+#hudBottomLeft{position:absolute;left:16px;bottom:16px}
+#healthWrap{width:220px;height:22px;background:#222;border:2px solid #fff;position:relative}
+#healthBar{height:100%;width:100%;background:linear-gradient(90deg,#e33,#f66)}
+#hudHealth{position:absolute;inset:0;text-align:center;font-weight:900;line-height:18px}
+#hudAmmoWrap{margin-top:6px;font-weight:900;text-shadow:0 2px 4px #000}
+#hudBottomRight{position:absolute;right:20px;bottom:16px;font-size:30px;font-weight:900;text-shadow:0 2px 6px #000}
+#hudMessage{position:absolute;top:22%;left:50%;transform:translateX(-50%);font-size:26px;font-weight:900;color:#ffd23e;text-align:center;text-shadow:0 2px 8px #000;width:90%}
+#hudHint{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);font-size:12px;opacity:.75;text-shadow:0 1px 3px #000;white-space:nowrap}
+#crosshair{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:28px;color:#fff;text-shadow:0 0 4px #000}
+#vignette{position:fixed;inset:0;pointer-events:none;z-index:4;box-shadow:inset 0 0 140px rgba(200,0,0,0);transition:box-shadow .3s}
+#vignette.hurt{box-shadow:inset 0 0 160px rgba(220,0,0,.75)}
+.menu{position:fixed;inset:0;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:linear-gradient(160deg,rgba(10,20,35,.92),rgba(60,10,20,.88));padding:20px}
+.menu h1{font-size:84px;line-height:.9;font-weight:900;font-style:italic;color:#ffd23e;text-shadow:4px 4px 0 #c81e1e,8px 8px 0 rgba(0,0,0,.6);letter-spacing:2px}
+.menu h2{font-size:56px;font-weight:900;color:#ffd23e;text-shadow:3px 3px 0 #c81e1e}
+.tagline{font-size:19px;margin:14px 0 6px;color:#9fd8ff}
+.story{max-width:560px;font-size:15px;line-height:1.5;opacity:.95}
+.btns{display:flex;flex-direction:column;gap:10px;margin:22px 0}
+.btns button{pointer-events:auto;cursor:pointer;min-width:280px;padding:13px 22px;font-size:17px;font-weight:900;letter-spacing:1px;color:#111;background:#ffd23e;border:3px solid #000;border-radius:6px}
+.btns button:hover{background:#fff}
+#howPanel{display:none;max-width:600px;text-align:left;font-size:14px;line-height:1.5;background:rgba(0,0,0,.45);padding:14px;border-radius:8px}
+#howPanel.open{display:block}
+#howPanel p{margin:6px 0}
+.foot{font-size:12px;opacity:.7}
+#busted{background:rgba(20,0,0,.9)}
+#busted button{cursor:pointer;padding:13px 22px;font-size:17px;font-weight:900;background:#ffd23e;border:3px solid #000;border-radius:6px}
